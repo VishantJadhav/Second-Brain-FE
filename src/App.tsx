@@ -1,16 +1,8 @@
-// import { useState } from 'react'
-import './App.css'
-import { Button } from './components/ui/Button'
+import { Dashboard } from "./pages/Dashboard"
 
-function App() {
-
-  return (
-    <>
-      <Button variant='primary' text="Share Brain" size='md' onClick={()=>{}} />
-      <Button variant='secondary' text="Add Content" size='md' onClick={()=>{}} />
-    </>
-  )
+function App() { 
+  return <Dashboard/>
 }
-
+ 
 export default App
 
