@@ -1,8 +1,13 @@
-import { useState } from "react";
 import { CloseIcon } from "../icons/CloseIcon";
 import { Button } from "./Button";
+import { Input } from "./Input";
 
-export function CreateContentModal({open, onClose}) {
+interface CreateContentModalProps {
+  open : boolean;
+  onClose : () => void;
+}
+
+export function CreateContentModal({open, onClose} : CreateContentModalProps) {
   return (
     <div>
       {open && (
@@ -35,8 +40,4 @@ export function CreateContentModal({open, onClose}) {
   );
 }
 
-function Input({onChange, placeholder} : {onChange: ()=> void}) {
-  return <div className="flex justify-center m-4">
-          <input placeholder={placeholder} onChange={onChange} type={"text"} className=" bg-slate-200/70 w-full p-2 text-center text-xl border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition "/>
-        </div>
-}
+

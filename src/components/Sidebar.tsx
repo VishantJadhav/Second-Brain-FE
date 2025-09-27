@@ -11,7 +11,7 @@ export function Sidebar() {
            <div className="pr-1 text-purple-600">
             <LogoIcon/>
            </div>
-            <div className="text-purple-600 font-semibold	">
+            <div className="font-semibold">
              Brainly
             </div>
         </div>

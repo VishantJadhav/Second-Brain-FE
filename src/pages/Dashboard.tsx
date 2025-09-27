@@ -5,6 +5,7 @@ import { CreateContentModal } from '../components/CreateContentModal'
 import { PlusIcon } from '../icons/PlusIcon'
 import { ShareIcon } from '../icons/ShareIcon'
 import { Sidebar } from '../components/Sidebar'
+import { Signup } from './Signup'
 
 export function Dashboard() { 
 
